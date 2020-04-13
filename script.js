@@ -5,7 +5,6 @@ function FormName(){
         _.btn = {};
         _.btn.save = "btnSaveForm";
         _.btn.void = "btnVoidForm";
-        _.btn.standard = "btnStandardA";
 
         _.onClick = {};
         _.onClick.save = (evt) => {
@@ -15,9 +14,6 @@ function FormName(){
         _.onClick.void = (evt) => {
             _.bld.logger.log("void click");
         };
-        _.onClick.standard = () => {
-            _.bld.logger.log("standard click");
-        }
     }
 
     { // Form items
@@ -49,18 +45,8 @@ function FormName(){
 
     _.constructor = () =>{
         _.bld = new BuilderForm(_, false);   
-        // _.bld.definitions.FormObject = "frmItems2";
         _.bld.build();
-
-        // $(`#${_.frmInputs.input1}`).AnovoDateStandard_560();
-
-
-        // $(`#${_.btn.standard}`).AnovoBtnAccept();
-        // $(`#${_.btn.standard}`).AnovoBtnUpdate();
     }
-
-    
-
     _.constructor();
 }
 

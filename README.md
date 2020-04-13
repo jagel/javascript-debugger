@@ -31,3 +31,12 @@ _.onClick.firstbutton = (evt) => {
 ```
 
 4. Is everything was declared correctly the logger panel will display a succes message in each step builded it
+
+## Display error and suggest how you can fix it
+
+![Error building automate builder](https://raw.githubusercontent.com/jagel/javascript-debugger/master/img/demo/ErrorView.png)
+
+## Display information refarding in each auto builder
+
+![Error building automate builder](https://raw.githubusercontent.com/jagel/javascript-debugger/master/img/demo/SuccessView.png)
+
