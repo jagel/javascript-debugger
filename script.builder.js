@@ -104,7 +104,7 @@ function BuilderForm(_, disableLog = false){
                         if(objectCallback[this.definitions.errorMethod])
                             objectCallback[this.definitions.errorMethod]();
                         else
-                            AnovoRx.error({ module: eventname, error: err });
+                            this.logger(err, this.logger.loggerError)
                     },
                     complete: this.hideLoadingEvent
                 });
@@ -248,7 +248,7 @@ var Definer = {
     },
 }
 
-$.fn.AnovoDateStandard_560 = function() {
+$.fn.DateStandard_560 = function() {
       $(this).datepicker({
         showOn: 'focus',
         changeMonth: true,
@@ -264,38 +264,12 @@ $.fn.AnovoDateStandard_560 = function() {
         });
     }
   
-    $.fn.AnovoBtnAccept = function(){
+    $.fn.BtnAccept = function(){
         $(this).addClass('btn btn-success');
         $(this).html('Save');
     }
-    $.fn.AnovoBtnUpdate = function(){
+    $.fn.Update = function(){
         $(this).addClass('btn btn-warning');
         $(this).html('Update');
     }
-//TODO validate existense of formName
-
-/*
-_.validatePriceInput = (e) => {
-    let regexde = /^[0-9]*$/g;
-    let regexdo = /^[.]*$/g;
-    let key = e.key;
-    let valid = (regexde.test(key) || regexdo.test(key));
-    if (!valid) {
-        e.preventDefault();
-        return false;
-    }
-}
-
-
-    _.validateNumber = (e) =>{
-        if (AnovoRx.isAValidKeyCode(e.keyCode)) {
-            return true;
-        }
-        let regExp = /[a-z]/i;
-        let value = e.key || String.fromCharCode(e.which);
-        if (regExp.test(value)) {
-            e.preventDefault();
-            return false;
-        }
-    } 
-*/
+//TODO: validate existense of formName
