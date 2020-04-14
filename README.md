@@ -6,6 +6,8 @@ Validate events and functions declared using JQuery, characteristics created
 * Set relation between button and event, if a button does not have an event, will show an error message regarding the methos that is missing
 * Create at the end of the html a console log where show the builder status and also is posible to print information
 
+[Live example](https://jagel.github.io/javascript-debugger/)
+
 ## Javascript Libraries dependencies
 
 * Bootstrap 4.4.1
@@ -39,4 +41,3 @@ _.onClick.firstbutton = (evt) => {
 ## Display information in each auto builder
 
 ![Error building automate builder](https://raw.githubusercontent.com/jagel/javascript-debugger/master/img/demo/SuccessView.png)
-
