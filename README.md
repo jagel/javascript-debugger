@@ -36,7 +36,7 @@ _.onClick.firstbutton = (evt) => {
 
 ![Error building automate builder](https://raw.githubusercontent.com/jagel/javascript-debugger/master/img/demo/ErrorView.png)
 
-## Display information regarding in each auto builder
+## Display information in each auto builder
 
 ![Error building automate builder](https://raw.githubusercontent.com/jagel/javascript-debugger/master/img/demo/SuccessView.png)
 
