@@ -22,11 +22,33 @@
 
   <div class="jumbotron text-center">
     <h1>Front end builder</h1>
-    <p>Template to increase speed in jquert declaratinos!</p>
+    <p>Template to increase speed in JQuery declarations!</p>
   </div>
   
   <div class="container">
     <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-6">
+                <label>Disable by area</label>
+                <button id="btndisableform" class="btn btn-sm btn-success">disable form</button><br /><br />
+                <button id="btnenableForm" class="btn btn-sm btn-success">enable form</button><br /><br />
+                <button id="btnrestoreForm" class="btn btn-sm btn-success">restore form</button><br /><br />
+              </div>
+              <div class="col-6">
+                <label>Disable by buttons</label>
+                <button id="btndisablebuttons" class="btn btn-sm btn-success">disable buttons</button><br /><br />
+                <button id="btnenablebuttons" class="btn btn-sm btn-success">enable buttons</button><br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="col-sm-8">
         <div class="panel panel-primary">
           <div class="panel-heading">
@@ -39,10 +61,25 @@
               <div class="row">
                   <div class="col-12 form-group">
                     <label>Date</label>
+                    <input type="text" name="name" id="input1" disabled required>
+                  </div>
+                  <div class="col-12 form-group">
+                    <label>Date</label>
+                    <input type="text" name="name" id="input1" required>
+                  </div>
+                  <div class="col-12 form-group">
+                    <label>Date</label>
                     <input type="text" name="name" id="input1" required>
                   </div>
               </div>
-              
+              <button id="demo1" class="btn btn-sm btn-primary">demo1</button>
+              <button id="demo2" class="btn btn-sm btn-primary">demo2</button>
+              <button id="demo3" class="btn btn-sm btn-primary">demo3</button>
+              <button id="demo4" class="btn btn-sm btn-primary">demo4</button>
+              <button id="damo1" class="btn btn-sm btn-primary">damo1</button>
+              <button id="damo2" class="btn btn-sm btn-primary">damo2</button>
+              <button id="damo3" class="btn btn-sm btn-primary">damo3</button>
+              <button id="damo4" class="btn btn-sm btn-primary">damo4</button>
             </form>
           </div>
         </div>
@@ -52,3 +89,4 @@
 </div>
 </body>
 </html>
+
